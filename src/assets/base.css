@@ -1,6 +1,4 @@
-/* color palette from <https://github.com/vuejs/theme> */
 *{
-    max-width: 100%;
     width: 100%;
     margin: 0px;
     background-color: #212121;
@@ -10,7 +8,6 @@
   header{
     width: 95%;
     background: linear-gradient(-45deg,#C200F5,#8f73f6,#23a6d5);
-    background-size: 100% 200%;
     height: 80px;
     color: white;
     display: flex;
@@ -22,8 +19,6 @@
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    height: 100%;
   }
   #logo{
     flex: 1;
@@ -40,39 +35,25 @@
   }
   .content{
     flex: 1 0 21%;
-    width: 100px;
-    height: auto;
-    /*background-color: #eb3131;*/
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 10px;
     box-shadow: 0 2px 1px 0 rgba(53, 53, 53, 0.76);
-    transition: width 200ms, height 200ms;
     background: linear-gradient(-45deg,#23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-  }
-  .content:hover{
-    width: 110px;
-    height: auto + 10px;
+    padding-bottom: 5px;
   }
   .Fach{
-    text-align: left;
     font-weight: bold;
     color: white;
     background-color: transparent;
   }
-  .NotenSchnitt{
-    display: flex;
-    width:auto;
-    text-align: right;
-    font-weight: bold;
-    color: white;
+  .Fach > a{
     background-color: transparent;
+    float: right;
+    width: auto;
     padding-right: 5px;
   }
 .note{
-    color: white;
     background-color: transparent;
     float: right;
 }
@@ -84,22 +65,36 @@
     width: auto;
 }
 .note > div > button{
-    color: white;
-    background-color: transparent;
-    width: 45px;
+  background-color: transparent;
+  width: 45px;
+  border: none;
+  
+}
+.note > div > button:hover{
+  cursor: pointer;
+  
 }
 .notenAdd{
-    color: white;
     background-color: transparent;
-    padding-left: 37.5%;
     width: auto;
     padding-right: 5px;
+    padding-top: 20px;
 
 }
 .notenAdd > input{
     background-color: white;
     width: 45px;
     float: right;
-
+    border: none;
 }
-  
+@media screen and (max-width: 992px) {
+  .content{
+    flex: 1 0 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    box-shadow: 0 2px 1px 0 rgba(53, 53, 53, 0.76);
+    background: linear-gradient(-45deg,#23a6d5, #23d5ab);
+    padding-bottom: 5px;
+  }
+}

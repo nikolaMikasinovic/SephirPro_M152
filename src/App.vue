@@ -2,7 +2,7 @@
   <html>
     <header>
       <div id="logo">
-        logo
+        <img src="./assets/Logo_sephir.png" alt="" style="background-color: transparent;width: 100px;">
       </div>
       <div id="logoTitle">
         SephirPro
